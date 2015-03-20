@@ -1,0 +1,20 @@
+CACHE MANIFEST
+
+
+CACHE:
+humans.txt
+index.html
+index.html.gz
+index.min.css
+index.min.css.gz
+index.min.css.map
+index.min.js
+index.min.js.gz
+index.min.js.map
+robots.txt
+
+
+NETWORK:
+*
+
+# hash: 135f38b5c0afe318b1841e054c1a306894c623545820dda8192ce185ae74d8ba
