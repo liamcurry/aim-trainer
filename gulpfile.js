@@ -136,7 +136,7 @@ gulp.task('watch', ['build'], function() {
 	gulp.watch('src/**/*.*', ['build'])
 })
 
-gulp.taks('gh-pages', ['build'], function() {
+gulp.task('gh-pages', ['build'], function() {
 	return gulp.src('dist/**/*')
 		.pipe($.ghPages())
 })
