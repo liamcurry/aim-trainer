@@ -136,6 +136,11 @@ gulp.task('watch', ['build'], function() {
 	gulp.watch('src/**/*.*', ['build'])
 })
 
+gulp.taks('gh-pages', ['build'], function() {
+	return gulp.src('dist/**/*')
+		.pipe($.ghPages())
+})
+
 gulp.task('deploy', ['build'], function() {
 	// create a new publisher
 	var publisher = $.awspublish.create({
