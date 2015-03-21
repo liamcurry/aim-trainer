@@ -97,6 +97,7 @@ gulp.task('gz', ['html', 'css', 'js'], function () {
 gulp.task('copy', function() {
 	return gulp.src([
 		'src/*.*',
+		'src/sounds/*.*',
 		'!src/*.jade'
 	], {
 			dot: true

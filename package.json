@@ -4,9 +4,10 @@
   "description": "A simple Pomodor timer written with Mithril",
   "main": "gulpfile.js",
   "dependencies": {
+    "cubism": "^1.6.0",
     "d3": "^3.5.5",
     "eventemitter3": "^0.1.6",
-    "lodash": "^3.3.1",
+    "lodash": "^3.5.0",
     "mithril": "^0.1.28",
     "stats": "^1.0.0",
     "stats-js": "^1.0.0-alpha1",

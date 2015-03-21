@@ -1,13 +1,19 @@
 doctype html
 html(manifest='manifest.txt')
-	meta(charset='utf-8')
-	meta(http-equiv='X-UA-Compatible', content='IE=edge')
-	title Pomodoro
-	meta(name='viewport', content='width=device-width', initial-scale='1')
-	link(rel='stylesheet', href='index.min.css')
-	.hidden
-		//- inject:svg
-		//- endinject
-	#app
-
-	script(src='index.min.js')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title Aim Trainer
+		meta(name='viewport', content='width=device-width', initial-scale='1')
+		link(rel='stylesheet', href='index.min.css')
+	body.fullbleed
+		.hidden(hidden)
+			//- inject:svg
+			//- endinject
+		#container.layout.horizontal.fit
+			.flex-2
+				h2 Stats
+				#stats
+			.flex-10.relative
+				#game.fit
+		script(src='index.min.js')
