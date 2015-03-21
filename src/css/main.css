@@ -18,49 +18,180 @@ body {
 	text-align: center;
 }
 
-html, body, .pomodori {
+html, body {
 	height: 100%;
 }
 
-.hidden {
-	display: none;
+.layout.horizontal,
+.layout.horizontal-reverse,
+.layout.vertical,
+.layout.vertical-reverse {
+	display: flex;
 }
-
+.layout.inline {
+	display: inline-flex;
+}
+.layout.horizontal {
+	flex-direction: row;
+}
+.layout.horizontal-reverse {
+	flex-direction: row-reverse;
+}
+.layout.vertical {
+	flex-direction: column;
+}
+.layout.vertical-reverse {
+	flex-direction: column-reverse;
+}
+.layout.wrap {
+	flex-wrap: wrap;
+}
+.layout.wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+.flex-auto {
+	flex: 1 1 auto;
+}
+.flex-none {
+	flex: none;
+}
+.flex,
+.flex-1 {
+	flex: 1;
+}
+.flex-2 {
+	flex: 2;
+}
+.flex-3 {
+	flex: 3;
+}
+.flex-4 {
+	flex: 4;
+}
+.flex-5 {
+	flex: 5;
+}
+.flex-6 {
+	flex: 6;
+}
+.flex-7 {
+	flex: 7;
+}
+.flex-8 {
+	flex: 8;
+}
+.flex-9 {
+	flex: 9;
+}
+.flex-10 {
+	flex: 10;
+}
+.flex-11 {
+	flex: 11;
+}
+.flex-12 {
+	flex: 12;
+}
+/* alignment in cross axis */
+.layout.start {
+	align-items: flex-start;
+}
+.layout.center,
+.layout.center-center {
+	align-items: center;
+}
+.layout.end {
+	align-items: flex-end;
+}
+/* alignment in main axis */
+.layout.start-justified {
+	justify-content: flex-start;
+}
+.layout.center-justified,
+.layout.center-center {
+	justify-content: center;
+}
+.layout.end-justified {
+	justify-content: flex-end;
+}
+.layout.around-justified {
+	justify-content: space-around;
+}
+.layout.justified {
+	justify-content: space-between;
+}
+/* self alignment */
+.self-start {
+	align-self: flex-start;
+}
+.self-center {
+	align-self: center;
+}
+.self-end {
+	align-self: flex-end;
+}
+.self-stretch {
+	align-self: stretch;
+}
+/*******************************
+		Other Layout
+*******************************/
 .block {
 	display: block;
 }
-
-.center {
-	margin: 0 auto;
-	text-align: center;
+/* IE 10 support for HTML5 hidden attr */
+[hidden] {
+	display: none !important;
+}
+.invisible {
+	visibility: hidden !important;
+}
+.relative {
+	position: relative;
+}
+.fit {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+body.fullbleed {
+	margin: 0;
+	height: 100vh;
+}
+.scroll {
+	-webkit-overflow-scrolling: touch;
+	overflow: auto;
+}
+/* fixed position */
+.fixed-bottom,
+.fixed-left,
+.fixed-right,
+.fixed-top {
+	position: fixed;
+}
+.fixed-top {
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.fixed-right {
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+.fixed-bottom {
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.fixed-left {
+	top: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .symbol {
 	fill: white;
-}
-
-.timer {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-.timer-time {
-	font-size: 25vmin;
-	font-weight: 200;
-}
-
-.timer-toggle {
-	background: transparent;
-	border: 0;
-	color: var(--color);
-	cursor: pointer;
-	font-size: 7vmin;
-	letter-spacing: 3;
-	text-transform: uppercase;
-}
-
-input {
-	border: 1px solid var(--border-color);
-	padding: 10px;
 }
