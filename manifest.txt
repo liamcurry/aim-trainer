@@ -2,6 +2,9 @@ CACHE MANIFEST
 
 
 CACHE:
+headshot.mp3
+hit.mp3
+hitteammate.mp3
 humans.txt
 index.html
 index.html.gz
@@ -17,4 +20,4 @@ robots.txt
 NETWORK:
 *
 
-# hash: 135f38b5c0afe318b1841e054c1a306894c623545820dda8192ce185ae74d8ba
+# hash: a25875d231b6d0e46f48490c356301d06319c0658483d3a4506697f85e0cc162
