@@ -1,11 +1,7 @@
-Pomodori
-========
+Aim Trainer
+===========
 
-Pomodori is a simple [Pomodoro timer][pomodoro] written in Javascript with
-[Mithril][mithril].
-
-[pomodoro]: https://en.wikipedia.org/wiki/Pomodoro_Technique
-[mithril]: http://lhorie.github.io/mithril/
+A small static webapp that helps improve your aim in FPS games.
 
 Development
 -----------
@@ -16,19 +12,10 @@ npm install
 npm run watch
 ```
 
-TODO
-----
+Related Links
+-------------
 
-- [ ] Better documentation
-- [ ] `gh-pages` branch
-- [ ] Benchmarks
-- [ ] Tests
-- [ ] Toggle to show/hide settings
-- [ ] Styles for inputs/button
-- [ ] Styles for timer
-- [ ] Animation for timer
-- [ ] Fix the web server
-- [ ] Add gulp-favicon
-- [x] Add gulp-bench
-- [x] Add gulp-mocha
-- [x] Add .editorconfig
+- [game-enough.com](https://game-enough.com/)
+- [mousesensitivity.com](http://mousesensitivity.com/)
+- [Human Benchmark](http://humanbenchmark.com/)
+- [training_aim_csgo2](http://steamcommunity.com/sharedfiles/filedetails/?id=213240871)
