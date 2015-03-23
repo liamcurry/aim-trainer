@@ -19,3 +19,9 @@ Related Links
 - [mousesensitivity.com](http://mousesensitivity.com/)
 - [Human Benchmark](http://humanbenchmark.com/)
 - [training_aim_csgo2](http://steamcommunity.com/sharedfiles/filedetails/?id=213240871)
+
+TODO
+----
+
+- [ ] First person camera
+- [ ] Settings
