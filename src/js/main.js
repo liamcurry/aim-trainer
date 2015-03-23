@@ -85,8 +85,19 @@ class Game extends EventEmitter {
 	init() {
 		this.initCamera()
 		this.initRenderer()
+		this.initScene()
 		this.initTargets()
 		this.initEvents()
+	}
+	initScene() {
+		let geometry = new THREE.PlaneGeometry(500, 500, 32)
+		let material = new THREE.MeshBasicMaterial({
+			color: 0xffff00,
+			side: THREE.DoubleSide
+		})
+		let plane = this.plane = new THREE.Mesh(geometry, material)
+		this.scene.add(plane)
+		console.log('plane', plane)
 	}
 	initCamera() {
 		let camera = this.camera = new THREE.PerspectiveCamera(70, this.aspect(), 1, 10000)
@@ -174,11 +185,11 @@ class Game extends EventEmitter {
 		this.updateCamera()
 	}
 	updateCamera() {
-		let thetaRads = THREE.Math.degToRad(this.theta)
+		/*let thetaRads = THREE.Math.degToRad(this.theta)
 		this.camera.position.x = this.radius * Math.sin(thetaRads)
 		this.camera.position.y = this.radius * Math.sin(thetaRads)
-		this.camera.position.z = this.radius * Math.cos(thetaRads)
-		this.camera.lookAt(this.scene.position)
+		this.camera.position.z = this.radius * Math.cos(thetaRads)*/
+		this.camera.lookAt(this.plane.position)
 		this.renderer.render(this.scene, this.camera)
 		this.theta += 0.1
 	}
