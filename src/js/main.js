@@ -1,6 +1,8 @@
 import Game from './Game'
 import PlayerStats from './PlayerStats'
 
+console.log(Game, PlayerStats)
+
 function makeAudio(src) {
 	let audio = document.createElement('audio')
 	let source = document.createElement('source')

@@ -2,7 +2,7 @@ import Stats from 'stats-js'
 import m from 'mithril'
 
 
-export class PlayerStats {
+export default class PlayerStats {
 	constructor(config) {
 		if (!config.game) {
 			throw new Error('"game" parameter required')

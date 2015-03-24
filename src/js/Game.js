@@ -2,7 +2,7 @@ import THREE from 'three'
 import EventEmitter from 'eventemitter3'
 import Target from './Target'
 
-export class Game extends EventEmitter {
+export default class Game extends EventEmitter {
 	constructor(config={}) {
 		this.numTargets = config.numTargets || 1
 		this.duration = config.duration || 30 * 1000

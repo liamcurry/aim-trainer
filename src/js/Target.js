@@ -25,7 +25,7 @@ function randomizeObj(object) {
 	randomizeObjPosition(object)
 }
 
-export class Target extends EventEmitter {
+export default class Target extends EventEmitter {
 	constructor(config={}) {
 		this.material = new THREE.MeshBasicMaterial({
 			color: config.color || Math.random() * 0xffffff,

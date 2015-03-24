@@ -4,7 +4,7 @@ function bind(scope, fn) {
 	return () => { fn.apply(scope, arguments) }
 }
 
-export class FirstPersonControls {
+export default class FirstPersonControls {
 	constructor(object, domElement) {
 		this.object = object
 		this.target = new THREE.Vector3( 0, 0, 0 )
